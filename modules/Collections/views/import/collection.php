@@ -169,7 +169,7 @@
 
         selectFile(file) {
 
-            if (!file || ['application/json', 'text/csv'].indexOf(file.type) == -1) {
+            if (!file || ['json', 'csv'].indexOf(file.name.split('.').pop()) == -1) {
                 return App.ui.notify("Only JSON and CSV files are supported.");
             }
 

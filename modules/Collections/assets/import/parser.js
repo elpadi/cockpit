@@ -9,7 +9,7 @@
                 var reader = new FileReader();
 
                 reader.onload = function(e) {
-                    Parser[file.type=='application/json' ? 'json':'csv'](e.target.result, resolve, reject);
+                    Parser[file.name.split('.').pop()](e.target.result, resolve, reject);
                 };
 
                 reader.readAsText(file);

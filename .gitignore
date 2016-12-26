@@ -15,3 +15,4 @@
 !.gitkeep
 !/storage/*/index.html
 !/storage/*/.htaccess
+!addons/CustomStyles/*
